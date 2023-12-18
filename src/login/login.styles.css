@@ -10,7 +10,7 @@
   position: absolute;
   margin: 0;
   opacity: 1;
-  animation: fade-in 1s ease-in-out;
+  animation: fade-in 2s ease-in-out;
 }
 
 .login-container.hidden {
@@ -19,7 +19,7 @@
 }
 
 .fading {
-  animation: fading 2s ease-in-out;
+  animation: fading 3s ease-in-out;
 }
 
 @keyframes fading {
@@ -31,14 +31,14 @@
   }
 }
 
-
-
 .nombre-image {
+  font-size: 1.5rem; 
   position: absolute;
-  top: 2%;
+  top: 6%;
   left: 5%;
-  height: 13%;
-}
+  }
+
+
 
 .hola {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

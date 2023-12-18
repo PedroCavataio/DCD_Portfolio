@@ -138,9 +138,9 @@
 
 .scroll-button:hover {
   background-color: rgba(248, 73, 4, 0);
-  color: rgb(255, 254, 255);
+  color: rgb(248, 8, 248);
   border: 2px solid #2d2d2e00;
-  box-shadow: 0 0 15px rgb(2, 150, 155);
+  box-shadow: 0 0 15px rgba(2, 150, 155, 0);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   z-index: 1;
 }
