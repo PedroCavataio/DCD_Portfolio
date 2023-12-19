@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./login.styles.css";
 import pedroCavataio from "../assets/LogoPFC.png";
+import piramidesLogin from "../assets/piramidesLogin.png";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -24,6 +25,7 @@ const Login = () => {
           <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" />
         </div>
         <div className="contenedor">
+        <img src={piramidesLogin} alt="piramide" className="piramide-image" />
           <div className="hola">Delfina Cavataio Deluca </div>
         </div>
       </form>
