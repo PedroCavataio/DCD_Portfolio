@@ -22,10 +22,6 @@ function Nav() {
     boton_cerrar.classList.toggle("colocar_x");
   };
 
-  const redirigirALogin = () => {
-    navigate("/PFC_Portfolio");
-  };
-
   const nombreImagenLogo = () => {
     navigate("/landing");
   };
@@ -67,7 +63,7 @@ function Nav() {
               </NavLink>
             </li>
             <li>
-              <a href="/PFC_Portfolio" onClick={redirigirALogin}>
+              <a href="/DCD_Portfolio">
                 Salir
               </a>
             </li>

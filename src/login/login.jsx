@@ -17,13 +17,7 @@ const Login = ({ onLogin, access }) => {
       </div>
       <div className="contenedor">
         <div className="hola">Delfina Cavataio Deluca </div>
-      </div>
-      <div>
-      <button className="Saltar-button"  onClick={redirigirAInicio}>
-          Saltar Intro
-        </button> 
-      </div>
-      
+      </div>            
     </form>    
   );
 };
