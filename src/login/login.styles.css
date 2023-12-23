@@ -9,11 +9,31 @@
   background: linear-gradient(to right,  #d8d8da  50%, #f8f8f5  50%);
   position: absolute;
   margin: 0;
+  opacity: 1;
+  animation: fade-in 1s ease-in-out;
+}
+
+.login-container.hidden {
+  opacity: 0;
+  pointer-events: none; /* Evitar interacciones en el elemento oculto */
+}
+
+.fading {
+  animation: fading 1s ease-in-out;
+}
+
+@keyframes fading {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .nombre-image {
   position: absolute;
-  top: 5%;
+  top: 2%;
   left: 5%;
   height: 13%;
 }

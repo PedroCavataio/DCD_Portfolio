@@ -1,24 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./login.styles.css";
 import pedroCavataio from "../assets/LogoPFC.png";
 
-const Login = ({ onLogin, access }) => {
-   const navigate = useNavigate();
+const Login = () => {
+  const navigate = useNavigate();
+  const [showLogin, setShowLogin] = useState(true);
 
-    const redirigirAInicio = () => {
-    navigate('/landing'); 
-  }
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLogin(false);
+      navigate("/landing");
+    }, 1000);
 
- return (
-     <form className="login-container">
-      <div className="image-logo">
-        <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" />
-      </div>
-      <div className="contenedor">
-        <div className="hola">Delfina Cavataio Deluca </div>
-      </div>            
-    </form>    
+    return () => clearTimeout(timer);
+  }, [navigate]);
+
+  return (
+    <div className={`login-container ${showLogin ? 'fade-in fading' : 'fade-out'}`}>
+      
+      <form>
+        <div className="image-logo">
+          <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" />
+        </div>
+        <div className="contenedor">
+          <div className="hola">Delfina Cavataio Deluca </div>
+        </div>
+      </form>
+    </div>
   );
 };
 
