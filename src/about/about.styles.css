@@ -3,15 +3,15 @@
   align-items: center;
   justify-content: space-between;
   width: 100vw;
-  overflow-x: hidden;
+    overflow-x: hidden;
   background: linear-gradient(
     to right,
-    #030810,
-    #030810 20%, 
-    #0b0b0b 20%, 
-    #0b0b0b 80%, 
-    #e0dfdf 80%, 
-    #e0dfdf 100% 
+    #f5d39c ,
+    #f5d39c  20%, 
+    #01fbc1 20%, 
+    #01fbc1 80%, 
+    #48696c 80%, 
+    #acf3f8 100% 
   );
   background-size: cover;
   background-position: center center;
@@ -65,25 +65,25 @@
 }
 
 .españa {
-  color: #f5f4f4; 
+  color: #fa0404; 
   font-size: 18px;   
   
   opacity: 0; 
   transition: opacity 0.3s ease; 
   }
 
-  .es {
+  .Madrid {
     color: red;
   }
   
-  .pa {
+  /* .pa {
     color: yellow;
   }
   
   .ña {
     color: red;
   }
-
+ */
  
   .section p {
   margin: 0;
@@ -91,7 +91,7 @@
 }
 
 .contAbout-texto {
-  color: #f5f5f3;
+  color: #303030;
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: left;

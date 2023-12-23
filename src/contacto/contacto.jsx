@@ -37,7 +37,7 @@ const Contacto = () => {
         </div>
         <div className="card-body">
           <form
-            action="https://formspree.io/f/xaygbbee"
+            action="https://formspree.io/f/mbjnrqpw"
             method="POST"
             onSubmit={handleSubmit}
           >
@@ -84,17 +84,25 @@ const Contacto = () => {
       </div>
 
       <div className="redes-container">
-        <a href="https://www.linkedin.com/in/pedro-francisco-cavataio/" target="_blank"> 
+        <a
+          href="https://www.linkedin.com/in/delfina-cavataio-538a252a5/"
+          target="_blank"
+        >
           <img src={Linkedin} alt="Linkedin" className="linkedin" />
         </a>
-        <a href="https://github.com/PedroCavataio" target="_blank"> 
-          <img src={GitHub} alt="GitHub" className="github" />
-        </a>
-        <a href="https://wa.me/611854700" target="_blank">
+        <a href="https://wa.me/611854443" target="_blank">
           <img src={Whatsapp} alt="whatsapp" className="whatsapp" />
+          <p className="wsp-number">611 854 443</p>
         </a>
-        <a href="https://gmail.com" target="_blank">
-          <img src={Gmail} alt="gmail" className="gmail" />
+        <a
+          href="mailto:delfinacavataio@gmail.com"
+          target="_blank"
+          className="gmail-link"
+        >
+          <div className="gmail-container">
+            <img src={Gmail} alt="gmail" className="gmail" />
+          <p className="gmail-text">delfinacavatio@gmail.com</p>
+          </div>
         </a>
       </div>
     </div>

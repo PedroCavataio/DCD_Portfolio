@@ -26,9 +26,9 @@ const About = () => {
               <div className="sectionCV">
                 <img src={Ubicacion} alt="Ubicacion" className="ubicacion" />
                 <p className="españa">
-                  <span className="es">ES</span>
-                  <span className="pa">PA</span>
-                  <span className="ña">ÑA</span>
+                  <span className="es">Madrid</span>
+                  {/* <span className="pa">PA</span>
+                  <span className="ña">ÑA</span> */}
                 </p>
                 <a href={Curriculum} target="_blank">
                   <img src={DescargaCV} alt="CV" className="CV" />

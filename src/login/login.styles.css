@@ -6,7 +6,7 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right,  #131313  50%, #f30707  50%);
+  background: linear-gradient(to right,  #0e83e2  50%, #f3db01  50%);
   position: absolute;
   margin: 0;
 }
@@ -55,7 +55,7 @@ label {
 
 .hola {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
   padding-bottom: 18%;
   color: #aaaaaa;
   text-shadow: 4px 1px 1px  #f6f7f3; 

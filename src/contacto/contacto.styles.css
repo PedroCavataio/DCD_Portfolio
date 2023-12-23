@@ -5,7 +5,7 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right, #030810 68%, #0b0b0b 32%);    
+  background: linear-gradient(to right, #eddfa3 68%, #bab1b1 32%);    
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -88,7 +88,7 @@
 .linkedin {
   position: absolute;
   right: 14%; 
-  top: 32%; 
+  top: 42%; 
   transform: translateY(-50%);
   height: 40px;
   transition: transform 0.3s ease; 
@@ -97,22 +97,10 @@
   transform: translateY(-50%) scale(1.2);
 }
 
-.github {
-  position: absolute;
-  right: 14%; 
-  top: 50.2%; 
-  transform: translateY(-50%);
-  height: 40px;
-  transition: transform 0.3s ease; 
-}
-.github:hover {
-  transform: translateY(-50%) scale(1.2);
-}
-
 .whatsapp {
   position: absolute;
   right: 14%; 
-  top: 68%; 
+  top: 58%; 
   transform: translateY(-50%);
   height: 40px;
   transition: transform 0.3s ease; 
@@ -124,7 +112,7 @@
 .gmail {
   position: absolute;
   right: 13.5%; 
-  top: 84%; 
+  top: 74%; 
   transform: translateY(-50%);
   height: 40px;
   transition: transform 0.3s ease; 
