@@ -19,7 +19,7 @@
 }
 
 .fading {
-  animation: fading 1s ease-in-out;
+  animation: fading 2s ease-in-out;
 }
 
 @keyframes fading {
@@ -30,6 +30,8 @@
     opacity: 0;
   }
 }
+
+
 
 .nombre-image {
   position: absolute;

@@ -11,7 +11,7 @@ const Login = () => {
     const timer = setTimeout(() => {
       setShowLogin(false);
       navigate("/landing");
-    }, 1000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, [navigate]);

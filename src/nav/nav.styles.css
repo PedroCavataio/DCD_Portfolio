@@ -10,7 +10,19 @@
   align-items: center;  
   padding: 10px; /* Añade espaciado interior para los elementos dentro de la barra */  
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
+  opacity: 0; /* Inicia con opacidad 0 */
+  animation: fade-in 1s ease-in-out forwards;
+  z-index: 1;
+ }
+
+ @keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
   
   .barras {
     display: none;

@@ -11,26 +11,18 @@
   background-position: center center;
   background-repeat: no-repeat;
   z-index: -2;
+  opacity: 0; /* Inicia con opacidad 0 */
+  animation: fade-in 1s ease-in-out forwards; /* Aplica la animación fade-in */
 }
 
-.enter-button-landing {
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  background-color: #fffcfc23;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 5%;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.658);
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
-.enter-button-landing:hover {
-  background-color: #fcf9f900;
-  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.658);
-  transform: scale(1.1);
-}
-
 
 .fraseLanding {
   color: #aaaaaa;
@@ -44,96 +36,16 @@
   transition: transform 0.3s ease;
 }
 
-.fotoPedro {
-  position: relative;
-  width: 80vw;
-  max-width: 300px;
-  margin-top: 20px;
-  box-shadow: 2px 2px 8px 4px #0d0e0e;
-  object-fit: cover;
-  filter: brightness(0.1);
-  transition: filter 0.3s ease;
-  box-shadow: 0 0 5px rgb(5, 5, 5);
-  border-radius: 1%;
-}
-
-.light {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  position: absolute;
-  color: rgb(61, 60, 60);
-  background-color: #ffffff;
-  box-shadow: 0 0 15px rgba(2, 150, 155, 0);
-  cursor: pointer;
-  border-radius: 5px;
-  padding: 0.8rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.8rem;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  bottom: 3%;
-  right: 50%;
-  transform: translateX(50%);
-}
-
-.light:hover {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  position: absolute;
-  background-color: rgba(248, 73, 4, 0);
-  color: rgb(255, 254, 255);
-  box-shadow: 0 0 15px rgb(2, 150, 155);
-  cursor: pointer;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.8rem;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  bottom: 3%;
-  right: 50%;
-  transform: translateX(50%);
-}
-
-.light:hover .fotoPedro {
-  filter: brightness(1);
-}
-
 @media (max-width: 768px) {
   .fraseLanding {
     width: 90%;
     margin-top: 18%;
-  }
-
-  .fotoPedro {
-    width: 90vw;
-  }
-
-  .light {
-    width: 50px;
-    height: 50px;
-  }
+  }  
 }
-
 
 @media (max-width: 480px) {
   .fraseLanding {
     font-size: 18px;
     margin-top: 25%;
-  }
-
-  .fotoPedro {
-    width: 90vw;
-  }
-
-  .light {
-    width: 40px;
-    height: 40px;
-    font-size: 0.7rem;
-  }
+  }  
 }
