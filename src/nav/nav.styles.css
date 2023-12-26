@@ -23,11 +23,55 @@
     opacity: 1;
   }
 }
-  
-  .barras {
-    display: none;
-  }  
 
+.desplegableMiTrabajo ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f00505;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+}
+
+.desplegableMiTrabajo .open ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.desplegableMiTrabajo:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.desplegableMiTrabajo ul li {
+  padding: 10px;
+}
+
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin-left: 67.5vw;
+  margin-top: -2vw;
+  display: flex;
+  flex-direction: column;  
+}
+
+.desplegableMiTrabajo .submenu a {
+  color: #8cf305; /* Ajusta el color del texto a tu preferencia */
+  text-decoration: none;
+  font-size: 1rem; /* Ajusta el tamaño del texto a tu preferencia */
+  padding: 8px;
+  transition: background 0.3s, color 0.3s;
+  
+}
+
+.desplegableMiTrabajo .submenu a:hover {
+  background: rgba(210, 105, 30, 0.2); /* Ajusta el color de fondo al hacer hover */
+  color: rgb(248, 8, 236); /* Ajusta el color del texto al hacer hover */
+}
+  
+  
   .nombreImagenLogo {
     position: fixed;
     top: 1%;
@@ -68,19 +112,13 @@
     color: rgb(160, 160, 160);
   }
   
+  
   @media(max-width: 850px){
     .barras{
         background: rgba(237, 100, 100, 0);
         display: block;
     }
-  
-    .desplegable {
-        transform:  translate(-100%);
-        transition: 0.5s;
-        font-size: 1.5rem;
-        width: 50%;
-        background: rgba(red, green, blue, alpha);
-    }
+     
   
     ul {
         padding: 0;
@@ -100,33 +138,7 @@
         padding: 20px;
         display: block;
         text-align: left;
-    }
-  
-    .boton_menu {
-        background-image: url('../assets/iconoMenuSinFondo.png');        
-        background-repeat: no-repeat;
-        height: 30px;
-        width: 30px;
-        background-size: 30px;
-        background-position: center;
-    }
-  
-    .abrir_menu {
-        transform: translate(0%);
-        transition: 0.5s;
-        width: 50%;
-        background: rgba(30, 30, 30, 0.6);
-        backdrop-filter: blur(2px);
-    }
-  
-    .colocar_x {
-        background-image: url('../assets/cerrarSinFondo.png');        
-        background-repeat: no-repeat;
-        height: 30px;
-        width: 30px;
-        background-size: 30px;
-        background-position: center;
-    }
+    }    
   }
   
   @media(max-width: 500px){

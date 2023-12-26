@@ -9,6 +9,8 @@
   background: linear-gradient(to right,  #d8d8da  50%, #f8f8f5  50%);
   position: absolute;
   margin: 0;
+  opacity: 0; /* Inicia con opacidad 0 */
+  animation: fade-in 2s ease-in-out forwards;
   opacity: 1;
   animation: fade-in 2s ease-in-out;
 }
@@ -38,8 +40,6 @@
   left: 5%;
   }
 
-
-
 .hola {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 3rem; 
@@ -53,12 +53,7 @@
     align-items: flex-start;
   }
 
-  .planetLogin-image {
-    height: 20vh;
-    width: 100%;
-  }  
- 
-  .hola {
+.hola {
     font-size: 3rem; 
   }
 }

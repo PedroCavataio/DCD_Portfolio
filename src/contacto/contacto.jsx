@@ -94,12 +94,12 @@ const Contacto = () => {
           <img src={Whatsapp} alt="whatsapp" className="whatsapp" />
         </a>
         <a
-          href="mailto:delfinacavataio@gmail.com"
-          target="_blank"
+          href="mailto:delfinacavataio@gmail.com?Subject=Test Asunto desde Portfolio"
           className="gmail-link"
         >
           <div className="gmail-container">
-            <img src={Gmail} alt="gmail" className="gmail" />          
+            <img src={Gmail} alt="gmail" className="gmail" />
+          {/* <p className="gmail-text">delfinacavatio@gmail.com</p> */}
           </div>
         </a>
       </div>

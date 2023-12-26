@@ -18,14 +18,16 @@ const Login = () => {
   }, [navigate]);
 
   return (
-    <div className={`login-container ${showLogin ? 'fade-in fading' : 'fade-out'}`}>      
+    <div
+      className={`login-container ${showLogin ? "fade-in fading" : "fade-out"}`}
+    >
       <form>
-      <div className="nombre-image">Delfina Cavataio Deluca </div>
+        <div className="nombre-image">Delfina Cavataio Deluca </div>
         {/* <div className="image-logo">
              <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" /> 
         </div> */}
         <div className="contenedor">
-        <img src={piramidesLogin} alt="piramide" className="piramide-image" />
+          <img src={piramidesLogin} alt="piramide" className="piramide-image" />
           <div className="hola">Delfina Cavataio Deluca </div>
         </div>
       </form>
