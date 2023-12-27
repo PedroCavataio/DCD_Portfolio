@@ -26,10 +26,10 @@ const Login = () => {
         {/* <div className="image-logo">
              <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" /> 
         </div> */}
-        <div className="contenedor">
+       {/*  <div className="contenedor">
           <img src={piramidesLogin} alt="piramide" className="piramide-image" />
           <div className="hola">Delfina Cavataio Deluca </div>
-        </div>
+        </div> */}
       </form>
     </div>
   );

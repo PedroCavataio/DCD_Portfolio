@@ -111,7 +111,7 @@
     background: rgba(210, 105, 30, 0);
     color: rgb(160, 160, 160);
   }
-  
+
   
   @media(max-width: 850px){
     .barras{
@@ -141,6 +141,8 @@
     }    
   }
   
+
+    
   @media(max-width: 500px){
     .desplegable{
         width: 100%;

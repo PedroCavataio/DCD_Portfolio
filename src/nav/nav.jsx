@@ -1,11 +1,16 @@
-import React, { useState, useEffect, useRef  } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./nav.styles.css";
 import pedroCavataio from "../assets/LogoPFC.png";
 import { NavLink } from "react-router-dom";
-import { CastingRef, RickMortyRef, ControlRef, PortfolioRef } from "../trabajo/trabajo";
+import {
+  CastingRef,
+  RickMortyRef,
+  ControlRef,
+  PortfolioRef,
+} from "../trabajo/trabajo";
 
-let vacio = "";
+/* let vacio = ""; */
 
 function Nav() {
   const navigate = useNavigate();
@@ -38,12 +43,20 @@ function Nav() {
         behavior: "smooth",
       });
     }
-};
+  };
 
   return (
     <>
       <header>
-        <img src={pedroCavataio} alt="pedroIndex" className="nombreImagenLogo" />
+        <img
+          src={pedroCavataio}
+          alt="pedroIndex"
+          className="nombreImagenLogo"
+        />
+
+       {/*  <div className="barras">
+          <button onClick={abrir_cerrar_menu} className="button_menu" id = "x"></button>
+        </div> */}
 
         <nav id="menu" className="desplegable">
           <ul>
@@ -64,36 +77,37 @@ function Nav() {
                   to="/trabajo"
                   onClick={() => {
                     setActiveItem("/trabajo");
-                    handleSectionClick(CastingRef); 
-                    
-                 }}
+                    handleSectionClick(CastingRef);
+                  }}
                 >
                   Mi trabajo
                 </NavLink>
                 {isMenuOpen && (
                   <ul className="submenu">
                     <li>
-                    <a onClick={() => handleSectionClick(CastingRef)}>Casting APP - Proyecto grupal</a>
+                      <a onClick={() => handleSectionClick(CastingRef)}>
+                        Casting APP - Proyecto grupal
+                      </a>
                     </li>
                     <li>
-                    <a onClick={() => handleSectionClick(RickMortyRef)}>SPA Rick & Morty - Api</a>
+                      <a onClick={() => handleSectionClick(RickMortyRef)}>
+                        SPA Rick & Morty - Api
+                      </a>
                     </li>
                     <li>
-                    <a onClick={() => handleSectionClick(ControlRef)}>Control PK-AEP AA2000</a>
+                      <a onClick={() => handleSectionClick(ControlRef)}>
+                        Control PK-AEP AA2000
+                      </a>
                     </li>
                     <li>
-                    <a onClick={() => handleSectionClick(PortfolioRef)}>Portfolio Delfina Deluca</a>
+                      <a onClick={() => handleSectionClick(PortfolioRef)}>
+                        Portfolio Delfina Deluca
+                      </a>
                     </li>
                   </ul>
                 )}
               </li>
             </nav>
-
-            {/* <li className={activeItem === "/trabajo" ? "active" : ""}>
-              <NavLink to="/trabajo" onClick={() => setActiveItem("/trabajo")}>
-                Mi trabajo
-              </NavLink>
-            </li> */}
 
             <li className={activeItem === "/about" ? "active" : ""}>
               <NavLink to="/about" onClick={() => setActiveItem("/about")}>
@@ -115,6 +129,7 @@ function Nav() {
             </li>
           </ul>
         </nav>
+
       </header>
     </>
   );

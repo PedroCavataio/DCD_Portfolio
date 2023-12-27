@@ -6,13 +6,16 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right,  #d8d8da  50%, #f8f8f5  50%);
+  /* background: linear-gradient(to right,  #d8d8da  50%, #f8f8f5  50%); */  
+  background-image: url(../assets/piramidesLogin.png);
+  background-repeat: no-repeat;
+  background-position: center;
   position: absolute;
   margin: 0;
   opacity: 0; /* Inicia con opacidad 0 */
   animation: fade-in 2s ease-in-out forwards;
-  opacity: 1;
-  animation: fade-in 2s ease-in-out;
+  /* opacity: 1;
+  animation: fade-in 2s ease-in-out; */
 }
 
 .login-container.hidden {
@@ -23,6 +26,10 @@
 .fading {
   animation: fading 3s ease-in-out;
 }
+
+/* .piramide-image {
+  width: 60%;
+} */
 
 @keyframes fading {
   from {
@@ -56,4 +63,5 @@
 .hola {
     font-size: 3rem; 
   }
+  
 }
