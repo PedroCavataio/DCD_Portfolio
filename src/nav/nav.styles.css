@@ -1,23 +1,22 @@
 .desplegable {
   background: #0234bb;
-  position: fixed; /* Ancla la barra en la parte superior */
-  top: 0; /* Coloca la barra en la parte superior de la pantalla */
-  /* left: 0; */ /* Ancla la barra en el lado izquierdo */
+  position: fixed; 
+  top: 0; 
   height: 12%;
-  width: 100%; /* Ocupa todo el ancho de la pantalla */
-  display: flex; /* Agrega display flex para alinear los elementos */
-  justify-content: flex-end; /* Distribuye los elementos a lo largo de la barra */
+  width: 100%; 
+  display: flex; 
+  justify-content: flex-end; 
   align-items: center;
-  padding: 10px; /* Añade espaciado interior para los elementos dentro de la barra */
+  padding: 10px; 
   font-family: "MADE Mirage", "Arial Narrow", Arial, sans-serif;
-  opacity: 0; /* Inicia con opacidad 0 */
+  opacity: 0; 
   animation: fade-in 1s ease-in-out forwards;
   z-index: 1;
 }
 
 .barras {
   background: rgb(237, 100, 100);
-  display: none; /* Inicia con display none */
+  display: none; 
   position: fixed;
   top: 0;
   right: 0;
@@ -124,7 +123,7 @@ ul li a:hover {
   color: rgb(160, 160, 160);
 }
 
-@media (max-width: 850px) {
+@media (max-width: 850px)  {
   .barras {
     background: rgb(237, 100, 100);
     display: block;
@@ -133,9 +132,8 @@ ul li a:hover {
 
 .desplegable {
   transform: translate(-100%);
-  /* transition: 0.5s; */
   font-size: 1.5rem;
-  /*  width: 50%; */
+  width: 100%;
   background: rgba(red, green, blue, alpha);
   right: 0;
   z-index: 1;
@@ -190,10 +188,5 @@ ul li a:hover {
     text-align: left;
   }
 
-  @media (max-width: 480px) {
-    .desplegable {
-      width: 50%;
-      font-size: 1.6rem;
-    }
-  }
 }
+
