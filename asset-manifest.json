@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DCD_Portfolio/static/css/main.c1527a0b.css",
-    "main.js": "/DCD_Portfolio/static/js/main.b97097ea.js",
+    "main.css": "/DCD_Portfolio/static/css/main.88237dda.css",
+    "main.js": "/DCD_Portfolio/static/js/main.18e3942d.js",
     "static/js/787.4c06e754.chunk.js": "/DCD_Portfolio/static/js/787.4c06e754.chunk.js",
     "static/media/ControlAEP.xlsx": "/DCD_Portfolio/static/media/ControlAEP.526ab3ece94cb69ffb74.xlsx",
     "static/media/rickDeploy.png": "/DCD_Portfolio/static/media/rickDeploy.04595055600826e74628.png",
@@ -20,12 +20,12 @@
     "static/media/whatsapp.png": "/DCD_Portfolio/static/media/whatsapp.e00b71fb082abf76ee95.png",
     "static/media/tecnocasa.png": "/DCD_Portfolio/static/media/tecnocasa.d0a6b8dfa38a017a11ca.png",
     "index.html": "/DCD_Portfolio/index.html",
-    "main.c1527a0b.css.map": "/DCD_Portfolio/static/css/main.c1527a0b.css.map",
-    "main.b97097ea.js.map": "/DCD_Portfolio/static/js/main.b97097ea.js.map",
+    "main.88237dda.css.map": "/DCD_Portfolio/static/css/main.88237dda.css.map",
+    "main.18e3942d.js.map": "/DCD_Portfolio/static/js/main.18e3942d.js.map",
     "787.4c06e754.chunk.js.map": "/DCD_Portfolio/static/js/787.4c06e754.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1527a0b.css",
-    "static/js/main.b97097ea.js"
+    "static/css/main.88237dda.css",
+    "static/js/main.18e3942d.js"
   ]
 }
