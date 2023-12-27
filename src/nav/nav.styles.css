@@ -1,5 +1,5 @@
 .desplegable {
-  background: #faf605 ;
+  background: #0234bb ;
   position: fixed; /* Ancla la barra en la parte superior */
   top: 0; /* Coloca la barra en la parte superior de la pantalla */
   left: 0; /* Ancla la barra en el lado izquierdo */
@@ -9,7 +9,7 @@
   justify-content: flex-end; /* Distribuye los elementos a lo largo de la barra */
   align-items: center;  
   padding: 10px; /* Añade espaciado interior para los elementos dentro de la barra */  
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'MADE Mirage', 'Arial Narrow', Arial, sans-serif;
   opacity: 0; /* Inicia con opacidad 0 */
   animation: fade-in 1s ease-in-out forwards;
   z-index: 1;
@@ -184,7 +184,7 @@ li a {
 @media(max-width: 480px) {
 
   .desplegable {
-    width: 100%;
+    width: 50%;
     font-size: 1.6rem;
   }
 }
