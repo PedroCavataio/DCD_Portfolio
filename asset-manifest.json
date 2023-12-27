@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/DCD_Portfolio/static/css/main.e81b1859.css",
+    "main.css": "/DCD_Portfolio/static/css/main.a5b52389.css",
     "main.js": "/DCD_Portfolio/static/js/main.b964cc61.js",
     "static/js/787.4c06e754.chunk.js": "/DCD_Portfolio/static/js/787.4c06e754.chunk.js",
     "static/media/ControlAEP.xlsx": "/DCD_Portfolio/static/media/ControlAEP.526ab3ece94cb69ffb74.xlsx",
@@ -22,12 +22,12 @@
     "static/media/iconoMenuSinFondo.png": "/DCD_Portfolio/static/media/iconoMenuSinFondo.988a917abf5449c21827.png",
     "static/media/tecnocasa.png": "/DCD_Portfolio/static/media/tecnocasa.d0a6b8dfa38a017a11ca.png",
     "index.html": "/DCD_Portfolio/index.html",
-    "main.e81b1859.css.map": "/DCD_Portfolio/static/css/main.e81b1859.css.map",
+    "main.a5b52389.css.map": "/DCD_Portfolio/static/css/main.a5b52389.css.map",
     "main.b964cc61.js.map": "/DCD_Portfolio/static/js/main.b964cc61.js.map",
     "787.4c06e754.chunk.js.map": "/DCD_Portfolio/static/js/787.4c06e754.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e81b1859.css",
+    "static/css/main.a5b52389.css",
     "static/js/main.b964cc61.js"
   ]
 }
