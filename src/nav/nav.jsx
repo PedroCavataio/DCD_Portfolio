@@ -10,22 +10,34 @@ import {
   PortfolioRef,
 } from "../trabajo/trabajo";
 
-/* let vacio = ""; */
-
 function Nav() {
   const navigate = useNavigate();
   const location = useLocation();
   const [activeItem, setActiveItem] = useState(location.pathname);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = React.createRef();
 
   useEffect(() => {
     setActiveItem(location.pathname);
   }, [location.pathname]);
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        cerrarMenu();
+      }
+    };
+
+    document.body.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.body.removeEventListener("click", handleClickOutside);
+    };
+  }, [menuRef]);
+
   const nombreImagenLogo = () => {
     navigate("/landing");
   };
-
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuHover = () => {
     if (activeItem === "/trabajo") {
@@ -46,15 +58,22 @@ function Nav() {
   };
 
   const abrir_cerrar_menu = () => {
-    let menu_desplegable = document.getElementById("menu");
-    let boton_cerrar = document.getElementById("x");
-    menu_desplegable.classList.toggle("abrir_menu");
-    boton_cerrar.classList.toggle("colocar_x");
+    const menuDesplegable = document.getElementById("menu");
+    const botonCerrar = document.getElementById("x");
+    menuDesplegable.classList.toggle("abrir_menu");
+    botonCerrar.classList.toggle("colocar_x");
+  };
+
+  const cerrarMenu = () => {
+    const menuDesplegable = document.getElementById("menu");
+    const botonCerrar = document.getElementById("x");
+    menuDesplegable.classList.remove("abrir_menu");
+    botonCerrar.classList.remove("colocar_x");
   };
 
   return (
     <>
-      <header>
+      <header ref={menuRef}>
         <div className="barras">
           <button
             onClick={abrir_cerrar_menu}
@@ -66,7 +85,10 @@ function Nav() {
         <nav id="menu" className="desplegable">
           <ul>
             <li>
-              <NavLink to="/DCD_Portfolio" onClick={() => setActiveItem("/landing")}>
+              <NavLink
+                to="/DCD_Portfolio"
+                onClick={() => setActiveItem("/landing")}
+              >
                 <img
                   src={pedroCavataio}
                   alt="pedroIndex"

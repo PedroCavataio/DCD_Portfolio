@@ -1,5 +1,5 @@
 .desplegable {
-  background: #0234bb ;
+  background: #0234bb;
   position: fixed; /* Ancla la barra en la parte superior */
   top: 0; /* Coloca la barra en la parte superior de la pantalla */
   /* left: 0; */ /* Ancla la barra en el lado izquierdo */
@@ -7,13 +7,13 @@
   width: 100%; /* Ocupa todo el ancho de la pantalla */
   display: flex; /* Agrega display flex para alinear los elementos */
   justify-content: flex-end; /* Distribuye los elementos a lo largo de la barra */
-  align-items: center;  
-  padding: 10px; /* Añade espaciado interior para los elementos dentro de la barra */  
-  font-family: 'MADE Mirage', 'Arial Narrow', Arial, sans-serif;
+  align-items: center;
+  padding: 10px; /* Añade espaciado interior para los elementos dentro de la barra */
+  font-family: "MADE Mirage", "Arial Narrow", Arial, sans-serif;
   opacity: 0; /* Inicia con opacidad 0 */
   animation: fade-in 1s ease-in-out forwards;
   z-index: 1;
- }
+}
 
 .barras {
   background: rgb(237, 100, 100);
@@ -22,10 +22,10 @@
   top: 0;
   right: 0;
   padding: 10px;
-  z-index: 999;  
+  z-index: 999;
 }
 
- @keyframes fade-in {
+@keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -40,7 +40,7 @@
   top: 100%;
   left: 0;
   background-color: #f00505;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .desplegableMiTrabajo .open ul {
@@ -63,7 +63,7 @@
   margin-left: 67.5vw;
   margin-top: -2vw;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .desplegableMiTrabajo .submenu a {
@@ -71,127 +71,129 @@
   text-decoration: none;
   font-size: 1rem; /* Ajusta el tamaño del texto a tu preferencia */
   padding: 8px;
-  transition: background 0.3s, color 0.3s;  
+  transition: background 0.3s, color 0.3s;
 }
 
 .desplegableMiTrabajo .submenu a:hover {
-  background: rgba(210, 105, 30, 0.2); /* Ajusta el color de fondo al hacer hover */
+  background: rgba(
+    210,
+    105,
+    30,
+    0.2
+  ); /* Ajusta el color de fondo al hacer hover */
   color: rgb(248, 8, 236); /* Ajusta el color del texto al hacer hover */
 }
-    
-  .nombreImagenLogo {
-    position: fixed;
-    top: 1%;
-    left: 4%;    
-    height: 14%;
-    z-index: 999;
-  }
-     
-  ul {
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-  }  
-  
-  li {
-    list-style: none;
-    margin-right: 30px;
-    transition: color 0.3s; 
-  }
 
- ul li a.active {
-    color: rgba(2, 150, 155, 1);
-  }
+.nombreImagenLogo {
+  position: fixed;
+  top: 1%;
+  left: 4%;
+  height: 14%;
+  z-index: 999;
+}
 
- nav a{
-    color: rgb(250, 247, 247);
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 10px;
+ul {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  list-style: none;
+  margin-right: 30px;
+  transition: color 0.3s;
+}
+
+ul li a.active {
+  color: rgba(2, 150, 155, 1);
+}
+
+nav a {
+  color: rgb(250, 247, 247);
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px;
+  display: block;
+}
+
+ul li a:hover {
+  background: rgba(210, 105, 30, 0);
+  color: rgb(160, 160, 160);
+}
+
+@media (max-width: 850px) {
+  .barras {
+    background: rgb(237, 100, 100);
     display: block;
-  }
-  
-  ul li a:hover {
-    background: rgba(210, 105, 30, 0);
-    color: rgb(160, 160, 160);
-  }
-
-  
-  @media(max-width: 850px){
-  .barras{
-        background: rgb(237, 100, 100);
-        display: block;  
-        right: 0;
-  }
-     
-  .desplegable {
-    transform: translate(-100%);
-    /* transition: 0.5s; */
-    font-size: 1.5rem;
-   /*  width: 50%; */
-    background: rgba(red, green, blue, alpha);   
     right: 0;
-    z-index: 1;
   }
 
- ul {
+.desplegable {
+  transform: translate(-100%);
+  /* transition: 0.5s; */
+  font-size: 1.5rem;
+  /*  width: 50%; */
+  background: rgba(red, green, blue, alpha);
+  right: 0;
+  z-index: 1;
+}
+
+  ul {
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-.abrir_menu {
-  transform: translate(0%);
-  transition: (0.5sS);
-  width: 40%;
-  height: 100%;
-  background: rgba(233, 59, 6, 0.274);
-  backdrop-filter: blur(2px);  
-}
-
-
-.button_menu {
-  background-image: url(../assets/iconoMenuSinFondo.png);
-  background-color: #8cf305;
-  background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
-  background-size: 30px;
-  background-position: center;
-  margin: 10px;
-  border: none;
-}
-
-.colocar_x {
-  background-image: url(../assets/reactIcono.png);
-  background-color: #8cf305;
-  background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
-  background-size: 30px;
-  background-position: center;
-  margin: 10px;
-  border: none;
-}
-
-li a {
-  margin-top: 40px;
-  padding: 20px;
-  display: block;
-  text-align: left;
-}     
- 
-@media(max-width: 480px) {
-
-  .desplegable {
-    width: 50%;
-    font-size: 1.6rem;
   }
-}
+
+  .abrir_menu {
+    transform: translate(0%);
+    transition: (0.5sS);
+    width: 40%;
+    height: 100%;
+    background: rgba(233, 59, 6, 0.274);
+    backdrop-filter: blur(2px);
+  }
+
+  .button_menu {
+    background-image: url(../assets/iconoMenuSinFondo.png);
+    background-color: #8cf305;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+    background-position: center;
+    margin: 10px;
+    border: none;
+  }
+
+  .colocar_x {
+    background-image: url(../assets/reactIcono.png);
+    background-color: #8cf305;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+    background-position: center;
+    margin: 10px;
+    border: none;
+  }
+
+  li a {
+    margin-top: 40px;
+    padding: 20px;
+    display: block;
+    text-align: left;
+  }
+
+  @media (max-width: 480px) {
+    .desplegable {
+      width: 50%;
+      font-size: 1.6rem;
+    }
+  }
 }
