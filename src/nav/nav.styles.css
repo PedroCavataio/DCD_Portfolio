@@ -2,7 +2,7 @@
   background: #0234bb ;
   position: fixed; /* Ancla la barra en la parte superior */
   top: 0; /* Coloca la barra en la parte superior de la pantalla */
-  left: 0; /* Ancla la barra en el lado izquierdo */
+  /* left: 0; */ /* Ancla la barra en el lado izquierdo */
   height: 12%;
   width: 100%; /* Ocupa todo el ancho de la pantalla */
   display: flex; /* Agrega display flex para alinear los elementos */
@@ -16,9 +16,14 @@
  }
 
 .barras {
-  display: none;
+  background: rgb(237, 100, 100);
+  display: none; /* Inicia con display none */
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 999;  
 }
-
 
  @keyframes fade-in {
   from {
@@ -35,8 +40,7 @@
   top: 100%;
   left: 0;
   background-color: #f00505;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
 }
 
 .desplegableMiTrabajo .open ul {
@@ -67,8 +71,7 @@
   text-decoration: none;
   font-size: 1rem; /* Ajusta el tamaño del texto a tu preferencia */
   padding: 8px;
-  transition: background 0.3s, color 0.3s;
-  
+  transition: background 0.3s, color 0.3s;  
 }
 
 .desplegableMiTrabajo .submenu a:hover {
@@ -118,17 +121,20 @@
 
   
   @media(max-width: 850px){
-    .barras{
+  .barras{
         background: rgb(237, 100, 100);
-        display: block;
-    }
+        display: block;  
+        right: 0;
+  }
      
   .desplegable {
     transform: translate(-100%);
-    transition: 0.5s;
+    /* transition: 0.5s; */
     font-size: 1.5rem;
-    width: 50%;
-    background: rgba(red, green, blue, alpha);
+   /*  width: 50%; */
+    background: rgba(red, green, blue, alpha);   
+    right: 0;
+    z-index: 1;
   }
 
  ul {
@@ -145,8 +151,8 @@
   transition: (0.5sS);
   width: 40%;
   height: 100%;
-  background: rgba(223, 6, 6, 0.6);
-  backdrop-filter: blur(2px);
+  background: rgba(233, 59, 6, 0.274);
+  backdrop-filter: blur(2px);  
 }
 
 
