@@ -1,5 +1,5 @@
 .desplegable {
-  background: #0234bb;
+  background: #ececec;
   position: fixed; 
   top: 0; 
   height: 12%;
@@ -8,7 +8,7 @@
   justify-content: flex-end; 
   align-items: center;
   padding: 10px; 
-  font-family: "MADE Mirage", "Arial Narrow", Arial, sans-serif;
+  font-family: "MADE Mirage Medium", "Arial Narrow", Arial, sans-serif;
   opacity: 0; 
   animation: fade-in 1s ease-in-out forwards;
   z-index: 1;
@@ -37,19 +37,20 @@
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
-  background-color: #f00505;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+  left: -1vw;
+  background-color: #e1e1e4;
+  width: 17vw;
+  
+ }
 
 .desplegableMiTrabajo .open ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
 }
 
 .desplegableMiTrabajo:hover ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
 }
 
 .desplegableMiTrabajo ul li {
@@ -62,25 +63,24 @@
   margin-left: 67.5vw;
   margin-top: -2vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  width: 10vw; 
 }
 
 .desplegableMiTrabajo .submenu a {
-  color: #8cf305; /* Ajusta el color del texto a tu preferencia */
+  color: #767a7f; 
   text-decoration: none;
-  font-size: 1rem; /* Ajusta el tamaño del texto a tu preferencia */
+  font-size: 1rem; 
   padding: 8px;
   transition: background 0.3s, color 0.3s;
+  text-align: left;
+  margin-left: 0;
 }
 
 .desplegableMiTrabajo .submenu a:hover {
-  background: rgba(
-    210,
-    105,
-    30,
-    0.2
-  ); /* Ajusta el color de fondo al hacer hover */
-  color: rgb(248, 8, 236); /* Ajusta el color del texto al hacer hover */
+  background: rgba(226, 106, 27, 0); 
+  color: rgb(26, 25, 25);
+  text-decoration: underline;
 }
 
 .nombreImagenLogo {
@@ -96,7 +96,7 @@ ul {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: row; 
 }
 
 li {
@@ -106,21 +106,22 @@ li {
 }
 
 ul li a.active {
-  color: rgba(2, 150, 155, 1);
+  color: #a4a8ad;
 }
 
 nav a {
-  color: rgb(250, 247, 247);
+  color: #767a7f;
   text-decoration: none;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 10px;
   display: block;
+  font-weight: 1000px ;
 }
 
 ul li a:hover {
   background: rgba(210, 105, 30, 0);
-  color: rgb(160, 160, 160);
+  color: rgb(26, 25, 25);
 }
 
 @media (max-width: 850px)  {
@@ -187,6 +188,5 @@ ul li a:hover {
     display: block;
     text-align: left;
   }
-
 }
 

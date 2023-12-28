@@ -8,7 +8,7 @@ body {
   justify-content: space-between;
   width: 100vw;
     overflow-x: hidden;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     #f5d39c ,
     #f5d39c  20%, 
@@ -16,7 +16,8 @@ body {
     #01fbc1 80%, 
     #48696c 80%, 
     #acf3f8 100% 
-  );
+  ); */
+  background-color: #ececec;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

@@ -6,6 +6,7 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
+  background-color: #ececec;
   /* background: linear-gradient(to right,  #d8d8da  50%, #f8f8f5  50%); */  
   background-image: url(../assets/piramidesLogin.png);
   background-repeat: no-repeat;
@@ -50,8 +51,7 @@
 .hola {
   font-family: 'MADE Mirage', 'Arial Narrow', Arial, sans-serif;
   font-size: 3rem; 
-  color: #aaaaaa;
-  text-shadow: 4px 1px 1px  #f6f7f3; 
+  color: #767a7f;
   text-align: center;  
 }
 

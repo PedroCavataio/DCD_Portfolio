@@ -1,16 +1,17 @@
 body {
   font-family: 'MADE Mirage', 'Arial Narrow', Arial, sans-serif;
+  background-color: #ececec;
 }
 
 .background {
   font-family: 'MADE Mirage', 'Arial Narrow', Arial, sans-serif;
   width: 100vw;
   height: auto; 
-  background: linear-gradient(to right,  #f5d39c 50%, #f3e6e6 50%);
+  background-color: #ececec;
   position: absolute;
   z-index: -1;
   margin: 0;
-  opacity: 0; /* Inicia con opacidad 0 */
+  opacity: 0; 
   animation: fade-in 1s ease-in-out forwards;
 }
 
@@ -88,28 +89,12 @@ body {
   height: 20vw;
 }
 
-.image-text {  
-  font-size: 14px;   
-  opacity: 0; 
-  margin-bottom: 0; 
-  color: #2c2c2c;
-}
 
 .tituloProyectos {
-  opacity: 0;
-  color: #3b3b3b; 
-  font-size: 24px; 
-  transition: opacity 0.3s ease, color 0.3s ease, font-size 0.3s ease, transform 0.3s ease; 
+  color: #767a7f; 
+  font-size: 1.5rem; 
  }
 
-.deploy:hover .tituloProyectos {
-  opacity: 1;  
- }
-
-.trabajo-container:hover  .tituloProyectos {  
-  opacity: 1; 
-  transform: scale(1.1);
-}
 
 .image-gris-proximamente {
   filter: grayscale(100%);
@@ -121,34 +106,27 @@ body {
 }
 
 .footer {
-  height: 30vh;
+  height: 20vh;
 }
 
 .scroll-button {
-  position: fixed; 
-  left: 50%; 
-  transform: translateX(-50%); 
-  bottom: 20px; 
-  font-size: 0.8rem;
-  color: rgb(61, 60, 60);
-  background-color: #ffffff;
-  box-shadow: 0 0 15px rgba(2, 150, 155, 0);
-  border: 2px solid #2d2d2e00;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;  
-  margin: 10px;
-  font-family: 'MADE Mirage', 'Arial Narrow', Arial, sans-serif;
+  /* background-image: url(../assets/flecha1.png); */
+  background-image: url(../assets/flecha2.png); 
+  background-size: contain; /* Ajusta según sea necesario para tu imagen */
+  background-repeat: no-repeat;
+  width: 3vw; 
+  height: 3vw; 
+  position: fixed;
+  left: 50%;
+  bottom: 1vw;
+  cursor: pointer;
+  transition-duration: 1s;
   z-index: 2;
 }
 
 .scroll-button:hover {
-  background-color: rgba(248, 73, 4, 0);
-  color: rgb(248, 8, 248);
-  border: 2px solid #2d2d2e00;
-  box-shadow: 0 0 15px rgba(2, 150, 155, 0);
-  font-family: 'MADE Mirage', 'Arial Narrow', Arial, sans-serif;
-  z-index: 1;
+  background-image: url(../assets/flecha2Hover.png);
+  transition-duration: 1s;
 }
 
 

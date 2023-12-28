@@ -6,13 +6,13 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background-color: #eddfa3 ;
+  background-color: #ececec ;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   z-index: -2;
   opacity: 0; 
-  animation: fade-in 1s ease-in-out forwards; /* Aplica la animación fade-in */
+  animation: fade-in 1s ease-in-out forwards; 
 }
 
 @keyframes fade-in {
@@ -25,10 +25,10 @@
 }
 
 .fraseLanding {
-  color: #181818;
-  /* text-shadow: 2px 1px 1px  #f6f7f3;  */
-  font-size: 2rem;
-  font-family: 'MADE Mirage', 'Arial Narrow', Arial, sans-serif;
+  color: #767a7f;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-family: 'MADE Mirage';
   align-items: center;
   z-index: 0;
 }

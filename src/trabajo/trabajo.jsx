@@ -1,5 +1,5 @@
 /* trabajo.jsx */
-import React, { useRef, useEffect  } from "react";
+import React, { useRef, useEffect } from "react";
 import "./trabajo.styles.css";
 import RickGris from "../assets/rickDeployGris.png";
 import Rick from "../assets/rickDeploy.png";
@@ -16,9 +16,7 @@ export const RickMortyRef = React.createRef();
 export const ControlRef = React.createRef();
 export const PortfolioRef = React.createRef();
 
-
-const Trabajo = () => { 
-  
+const Trabajo = () => {
   const navigate = useNavigate();
 
   const scrollToTop = () => {
@@ -32,12 +30,10 @@ const Trabajo = () => {
     navigate("/trabajo#castingRef"); // Puedes cambiar a la referencia que desees
   }, [navigate]);
 
-
   return (
     <>
       <div className="background">
         <div className="containerJob">
-          
           <div className="trabajo-container" id="castingRef" ref={CastingRef}>
             <p className="tituloProyectos">Casting APP - Proyecto grupal</p>
             <div className="deploy">
@@ -61,7 +57,11 @@ const Trabajo = () => {
             </div>
           </div>
 
-          <div className="trabajo-container" id="rickMortyRef" ref={RickMortyRef}>
+          <div
+            className="trabajo-container"
+            id="rickMortyRef"
+            ref={RickMortyRef}
+          >
             <p className="tituloProyectos">SPA Rick & Morty - Api</p>
             <div className="deploy">
               <a
@@ -100,8 +100,14 @@ const Trabajo = () => {
             </div>
           </div>
 
-          <div className="trabajo-container" id="portfolioRef" ref={PortfolioRef}>
-            <p className="tituloProyectos">Portfolio Delfina Deluca - en construcción</p>
+          <div
+            className="trabajo-container"
+            id="portfolioRef"
+            ref={PortfolioRef}
+          >
+            <p className="tituloProyectos">
+              Portfolio Delfina Deluca - en construcción
+            </p>
             <div className="deploy">
               <div className="image-container left">
                 <img
@@ -121,9 +127,8 @@ const Trabajo = () => {
         </div>
 
         <div className="footer">
-          <button onClick={scrollToTop} className="scroll-button">
-            Volver arriba
-          </button>
+          <div onClick={scrollToTop} className="scroll-button">
+          </div>
         </div>
       </div>
     </>

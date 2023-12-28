@@ -5,7 +5,8 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right, #eddfa3 68%, #bab1b1 32%);    
+  /* background: linear-gradient(to right, #eddfa3 68%, #bab1b1 32%);   */  
+  background-color: #ececec;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -56,7 +57,7 @@
   box-sizing: border-box;  
   height: 150px;
   background-color: #33bebe70; 
-  color: #e7e6e6;
+  color: #767a7f;
 }
 
 .texto-encabezado {
@@ -65,20 +66,19 @@
 }
 
 .titulo {
-  color: #aaaaaa;
-  text-shadow: 2px 1px 1px  #f6f7f3;  
+  color: #767a7f;    
   font-family: 'MADE Mirage', 'Arial Narrow', Arial, sans-serif;
   font-size: 2.5rem;
 }
 
 .sub-titulo {
-  color: #b6b6b6;
+  color: #767a7f;
 }
 
 .btnEnviar {
   padding: 0.5rem 1.7rem;
   font-size: 1rem;
-  color: rgb(61, 60, 60);
+  color: #767a7f;
   background-color: #ffffff;
   box-shadow: 0 0 15px rgba(2, 150, 155, 0);
   border-radius: 5px;
@@ -90,7 +90,7 @@
 
 .btnEnviar:hover {
   background-color: rgba(248, 73, 4, 0);
-  color: rgb(255, 254, 255);
+  color: #767a7f;
   border: 2px solid #2d2d2e00;
   box-shadow: 0 0 15px rgb(2, 150, 155);
   font-family: 'MADE Mirage', 'Arial Narrow', Arial, sans-serif;
