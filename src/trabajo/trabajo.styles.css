@@ -29,7 +29,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: first baseline;
-  margin-top: 2vw;     
+  margin-top: 2vw;  
+  margin-bottom: 26vw;   
 }
 
 .trabajo-container {
@@ -100,11 +101,11 @@ body {
   width: 3vw; 
   height: 3vw; 
   position: fixed;
-  left: 50%;
+  left: 50vw;  
   bottom: 1vw;
   cursor: pointer;
   transition-duration: 1s;
-  z-index: 2;
+  z-index: 999;
 }
 
 .scroll-button:hover {
@@ -117,10 +118,15 @@ body {
 
    
   .trabajo-container {
-    padding: 10vw; 
+    padding: 15vw; 
     margin: auto; 
-    background-color: #8edf0d;
-    margin-left: 35%;
+    /* background-color: #8edf0d; */
+  }
+
+  .scroll-button {
+    width: 50px; 
+    height: 50px;     
+    z-index: 999;
   }
 
   .tituloProyectos {
@@ -130,15 +136,14 @@ body {
    }
 
   .containerJob {
-    margin-top: 10%;   
-    width: 75%;    
+    margin-top: 10%;  
+    margin-bottom: 52vw;     
   }
-  
-  
- /*  .footer {
+    
+  .footer {
     padding: 40%;
     
-  }  */ 
+  }  
 }
 
 @media (max-width: 480px) {
