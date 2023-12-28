@@ -28,9 +28,6 @@
   animation: fading 3s ease-in-out;
 }
 
-/* .piramide-image {
-  width: 60%;
-} */
 
 @keyframes fading {
   from {
@@ -60,8 +57,20 @@
     align-items: flex-start;
   }
 
+  .nombre-image {
+    font-size: 1rem; 
+    top: 3%; 
+    left: 3%; 
+  }
+
 .hola {
     font-size: 3rem; 
   }
-  
+
+  .login-container {
+  background-image: url(../assets/piramidesLogin.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;  
+}
 }

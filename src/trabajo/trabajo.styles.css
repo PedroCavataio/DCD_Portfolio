@@ -29,7 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: first baseline;
-  margin-top: 10vw;  
+  margin-top: 2vw;     
 }
 
 .trabajo-container {
@@ -37,7 +37,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgba(250, 250, 250, 0);  
-  padding: 10vw;
+  padding: 10vw;  
 }
 
 .image-container {
@@ -47,8 +47,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-left: 5vw; */
-}
+ }
 
 .image-color,
 .image-gris {
@@ -78,31 +77,15 @@ body {
   opacity: 1;
 }
 
-.image-container.left {
-  max-width: 100%; 
-  height: 5vw;
-  
-}
-
-.image-container.right {
-  max-width: 100%; 
-  height: 20vw;
-}
-
-
 .tituloProyectos {
   color: #767a7f; 
   font-size: 1.5rem; 
+  padding-top: 25%;  
  }
-
 
 .image-gris-proximamente {
   filter: grayscale(100%);
   transition: filter 0.3s ease;
-}
-
-.deploy:hover .image-gris-proximamente {
-  filter: none;
 }
 
 .footer {
@@ -112,7 +95,7 @@ body {
 .scroll-button {
   /* background-image: url(../assets/flecha1.png); */
   background-image: url(../assets/flecha2.png); 
-  background-size: contain; /* Ajusta según sea necesario para tu imagen */
+  background-size: contain; 
   background-repeat: no-repeat;
   width: 3vw; 
   height: 3vw; 
@@ -131,35 +114,39 @@ body {
 
 
 @media (max-width: 768px) {
+
+   
   .trabajo-container {
-    margin-top: 5%; 
+    padding: 10vw; 
+    margin: auto; 
+    background-color: #8edf0d;
+    margin-left: 35%;
   }
+
+  .tituloProyectos {
+    color: #767a7f; 
+    font-size: 1.2rem; 
+    padding-top: 35%;  
+   }
 
   .containerJob {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center; 
     margin-top: 10%;   
+    width: 75%;    
   }
+  
+  
+ /*  .footer {
+    padding: 40%;
+    
+  }  */ 
+}
 
-  .image-row {
-    max-width: 100%; 
-    margin-left: 0; 
-    margin-top: 15px; 
-  }
-
-  .image-container {
-    margin-left: 0; 
-  }
-
-  .footer {
-    height: auto; 
-  }
-
-  .scroll-button {
-    bottom: 10px; 
-    right: 5%; 
-  }
+@media (max-width: 480px) {
+    
+  .tituloProyectos {
+    color: #767a7f; 
+    font-size: 0.8rem; 
+    padding-top: 35%;  
+   }  
 }
 

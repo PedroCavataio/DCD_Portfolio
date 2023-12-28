@@ -44,7 +44,7 @@
 
 @media (max-width: 480px) {
   .fraseLanding {
-    font-size: 18px;
+    font-size: 1rem;
     margin-top: -15vw;
     align-items: center;
   }  

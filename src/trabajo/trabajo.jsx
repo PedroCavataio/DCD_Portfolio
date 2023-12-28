@@ -27,7 +27,7 @@ const Trabajo = () => {
   };
 
   useEffect(() => {
-    navigate("/trabajo#castingRef"); // Puedes cambiar a la referencia que desees
+    navigate("/trabajo#castingRef");
   }, [navigate]);
 
   return (
@@ -36,25 +36,23 @@ const Trabajo = () => {
         <div className="containerJob">
           <div className="trabajo-container" id="castingRef" ref={CastingRef}>
             <p className="tituloProyectos">Casting APP - Proyecto grupal</p>
-            <div className="deploy">
-              <a
-                href="https://deploy-sprint-2-frontend.onrender.com/"
-                target="_blank"
-              >
-                <div className="image-container left">
-                  <img
-                    src={CastingGris}
-                    alt="castingDeployGris"
-                    className="image-gris"
-                  />
-                  <img
-                    src={Casting}
-                    alt="castingDeploy"
-                    className="image-color"
-                  />
-                </div>
-              </a>
-            </div>
+            <a
+              href="https://deploy-sprint-2-frontend.onrender.com/"
+              target="_blank"
+            >
+              <div className="image-container left">
+                <img
+                  src={CastingGris}
+                  alt="castingDeployGris"
+                  className="image-gris"
+                />
+                <img
+                  src={Casting}
+                  alt="castingDeploy"
+                  className="image-color"
+                />
+              </div>
+            </a>
           </div>
 
           <div
@@ -63,41 +61,37 @@ const Trabajo = () => {
             ref={RickMortyRef}
           >
             <p className="tituloProyectos">SPA Rick & Morty - Api</p>
-            <div className="deploy">
-              <a
-                href="https://pedrocavataio.github.io/rick_and_morty/"
-                target="_blank"
-              >
-                <div className="image-container left">
-                  <img
-                    src={RickGris}
-                    alt="rickDeployGris"
-                    className="image-gris"
-                  />
-                  <img src={Rick} alt="rickDeploy" className="image-color" />
-                </div>
-              </a>
-            </div>
+            <a
+              href="https://pedrocavataio.github.io/rick_and_morty/"
+              target="_blank"
+            >
+              <div className="image-container left">
+                <img
+                  src={RickGris}
+                  alt="rickDeployGris"
+                  className="image-gris"
+                />
+                <img src={Rick} alt="rickDeploy" className="image-color" />
+              </div>
+            </a>
           </div>
 
           <div className="trabajo-container" id="controlRef" ref={ControlRef}>
             <p className="tituloProyectos">Control PK-AEP AA2000</p>
-            <div className="deploy">
-              <a href={ControlAep} target="_blank">
-                <div className="image-container left">
-                  <img
-                    src={ControlGris}
-                    alt="controlDeployGris"
-                    className="image-gris"
-                  />
-                  <img
-                    src={Control}
-                    alt="controlDeploy"
-                    className="image-color"
-                  />
-                </div>
-              </a>
-            </div>
+            <a href={ControlAep} target="_blank">
+              <div className="image-container left">
+                <img
+                  src={ControlGris}
+                  alt="controlDeployGris"
+                  className="image-gris"
+                />
+                <img
+                  src={Control}
+                  alt="controlDeploy"
+                  className="image-color"
+                />
+              </div>
+            </a>
           </div>
 
           <div
@@ -108,7 +102,7 @@ const Trabajo = () => {
             <p className="tituloProyectos">
               Portfolio Delfina Deluca - en construcción
             </p>
-            <div className="deploy">
+            <a href={ControlAep} target="_blank">
               <div className="image-container left">
                 <img
                   src={Proximamente}
@@ -121,15 +115,13 @@ const Trabajo = () => {
                   className="image-color"
                 />
               </div>
-              <div className="image-row"></div>
-            </div>
+            </a>
           </div>
         </div>
+      </div>
 
-        <div className="footer">
-          <div onClick={scrollToTop} className="scroll-button">
-          </div>
-        </div>
+      <div className="footer">
+        <div onClick={scrollToTop} className="scroll-button"></div>
       </div>
     </>
   );
