@@ -1,11 +1,12 @@
 .login-container {
   font-family: 'MADE Mirage', 'Arial Narrow', Arial, sans-serif;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #ececec;
   /* background: linear-gradient(to right,  #d8d8da  50%, #f8f8f5  50%); */  
   background-image: url(../assets/williammorriswillow.jpg);
@@ -15,6 +16,8 @@
   margin: 0;
   opacity: 0; /* Inicia con opacidad 0 */
   animation: fade-in 2s ease-in-out forwards;
+  top: 0;
+  left: 0;
   /* opacity: 1;
   animation: fade-in 2s ease-in-out; */
 }
@@ -41,8 +44,10 @@
 .nombre-image {
   font-size: 1.5rem; 
   position: absolute;
-  top: 6%;
-  left: 5%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(87, 85, 85);
   }
 
 .hola {

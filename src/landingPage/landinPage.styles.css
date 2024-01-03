@@ -15,14 +15,34 @@
   animation: fade-in 1s ease-in-out forwards; 
 }
 
-@keyframes fade-in {
+/* @keyframes fade-in {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
+} */
+
+@keyframes fade-in-text {
+  from {
+    opacity: 0;
+    transform: translatex(-980px); /* Opcional: añade un desplazamiento vertical al texto */
+  }
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
 }
+
+/* .fraseLanding {
+  color: #767a7f;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-family: 'MADE Mirage';
+  align-items: center;
+  z-index: 999;
+} */
 
 .fraseLanding {
   color: #767a7f;
@@ -31,7 +51,66 @@
   font-family: 'MADE Mirage';
   align-items: center;
   z-index: 0;
+  opacity: 0; /* Inicia con opacidad 0 */
+  animation: fade-in-text 1s ease-in-out forwards;
 }
+
+
+.imagenes {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  height: 30%; /* Ocupa toda la altura disponible */
+}
+
+.imagenes img {
+  position: absolute;
+  max-width: 25%;
+  max-height: 25%;
+  opacity: 0; /* Inicia con opacidad 0 */
+  transition: opacity 0.5s ease-in-out; /* Transición de la opacidad */
+}
+
+.imagen-1 {
+  top: 45%;
+  left: 40%;
+  transform: rotate(5deg);
+}
+
+.imagen-2 {
+  top: 20%;
+  left: 40%;
+  transform: rotate(-10deg);
+}
+
+.imagen-3 {
+  top: 25%;
+  left: 50%;
+  transform: rotate(15deg);
+}
+
+.imagen-4 {
+  top: 30%;
+  left: 30%;
+  transform: rotate(-8deg);
+}
+
+.imagen-1.show {
+  opacity: 1;
+}
+
+.imagen-2.show {
+  opacity: 1;
+}
+
+.imagen-3.show {
+  opacity: 1;
+}
+
+.imagen-4.show {
+  opacity: 1;
+}
+
 
 @media (max-width: 768px) {
   .fraseLanding {
