@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/DCD_Portfolio/static/css/main.348d9b9f.css",
-    "main.js": "/DCD_Portfolio/static/js/main.197e8cab.js",
+    "main.css": "/DCD_Portfolio/static/css/main.3529960b.css",
+    "main.js": "/DCD_Portfolio/static/js/main.1943f0d1.js",
     "static/js/787.4c06e754.chunk.js": "/DCD_Portfolio/static/js/787.4c06e754.chunk.js",
     "static/media/ControlAEP.xlsx": "/DCD_Portfolio/static/media/ControlAEP.526ab3ece94cb69ffb74.xlsx",
+    "static/media/williammorriswillow.jpg": "/DCD_Portfolio/static/media/williammorriswillow.19846517a3f0722919dc.jpg",
     "static/media/rickDeploy.png": "/DCD_Portfolio/static/media/rickDeploy.04595055600826e74628.png",
     "static/media/CVpedroCavataio_fullStackDeveloper.pdf": "/DCD_Portfolio/static/media/CVpedroCavataio_fullStackDeveloper.3b4956c983beef62ee82.pdf",
     "static/media/LogoPFC.png": "/DCD_Portfolio/static/media/LogoPFC.63dfa0166ca774114d93.png",
@@ -11,25 +12,29 @@
     "static/media/piramidesLogin.png": "/DCD_Portfolio/static/media/piramidesLogin.3b1e4cbe37374c1f70be.png",
     "static/media/castingAppDeployGris.png": "/DCD_Portfolio/static/media/castingAppDeployGris.614a3ce7eb2c55772d52.png",
     "static/media/controlDeployGris.png": "/DCD_Portfolio/static/media/controlDeployGris.baf5974ce57971155929.png",
+    "static/media/imgLanding4.jpeg": "/DCD_Portfolio/static/media/imgLanding4.d2cdba25c16a96d1a7d9.jpeg",
     "static/media/castingAppDeploy.png": "/DCD_Portfolio/static/media/castingAppDeploy.a84263fe0be85e0fe75a.png",
     "static/media/aa2000.png": "/DCD_Portfolio/static/media/aa2000.45431b95e6084a71fcc3.png",
     "static/media/github.png": "/DCD_Portfolio/static/media/github.096c8daee8a61165a4e8.png",
     "static/media/controlDeploy.png": "/DCD_Portfolio/static/media/controlDeploy.d98b9a0150ace61ffc59.png",
+    "static/media/imgLanding2.jpeg": "/DCD_Portfolio/static/media/imgLanding2.554a6d44a08f9445428b.jpeg",
     "static/media/proximamente.png": "/DCD_Portfolio/static/media/proximamente.e2c0f1d5e225b3ae2fc1.png",
     "static/media/ubicacionMapaBlanco.png": "/DCD_Portfolio/static/media/ubicacionMapaBlanco.c2e28b2bc4d60787a71b.png",
     "static/media/reactIcono.png": "/DCD_Portfolio/static/media/reactIcono.3a25cfd7ee3af5bcfb59.png",
     "static/media/flecha2Hover.png": "/DCD_Portfolio/static/media/flecha2Hover.2b96e4a3f44e31848d76.png",
     "static/media/flecha2.png": "/DCD_Portfolio/static/media/flecha2.7d764c035c4b7e65c8ae.png",
+    "static/media/imgLanding1.jpeg": "/DCD_Portfolio/static/media/imgLanding1.3007a39e9004f23d4116.jpeg",
     "static/media/whatsapp.png": "/DCD_Portfolio/static/media/whatsapp.e00b71fb082abf76ee95.png",
     "static/media/iconoMenuSinFondo.png": "/DCD_Portfolio/static/media/iconoMenuSinFondo.988a917abf5449c21827.png",
+    "static/media/imgLanding3.jpeg": "/DCD_Portfolio/static/media/imgLanding3.6c8ff62dba6503bb78b5.jpeg",
     "static/media/tecnocasa.png": "/DCD_Portfolio/static/media/tecnocasa.d0a6b8dfa38a017a11ca.png",
     "index.html": "/DCD_Portfolio/index.html",
-    "main.348d9b9f.css.map": "/DCD_Portfolio/static/css/main.348d9b9f.css.map",
-    "main.197e8cab.js.map": "/DCD_Portfolio/static/js/main.197e8cab.js.map",
+    "main.3529960b.css.map": "/DCD_Portfolio/static/css/main.3529960b.css.map",
+    "main.1943f0d1.js.map": "/DCD_Portfolio/static/js/main.1943f0d1.js.map",
     "787.4c06e754.chunk.js.map": "/DCD_Portfolio/static/js/787.4c06e754.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.348d9b9f.css",
-    "static/js/main.197e8cab.js"
+    "static/css/main.3529960b.css",
+    "static/js/main.1943f0d1.js"
   ]
 }
